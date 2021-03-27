@@ -8,11 +8,12 @@ Fully automated live streaming to multiple platforms.
 * One single dashboard which allows you to:
   * Monitor your live stream in detail over all platforms
   * Interact with your listeners/viewers over all platforms
-* Stream title and description are uniform and exactly the same over all platforms.
 * Fully automated VJ to use in your live streams
+* Stream title and description are uniform and exactly the same over all platforms
 * The logo of your organization is automatically integrated to your live stream
 * The DJ name is automatically integrated in your live stream
 * Live streams are automatically recorded, without the need for user interaction
+* Fully seperate Live- and Test-environments which allows you to test your broadcast setup without bothering your fanbase with test broadcasts
 
 ### Applications and design choices:
 
