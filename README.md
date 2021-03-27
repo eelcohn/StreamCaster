@@ -18,6 +18,8 @@ Fully automated live streaming to multiple platforms.
 ### Applications and design choices:
 
 ##### Generic applications:
+* [Docker](https://www.docker.com/):
+  * Automated deployment of application as a portable, self-sufficient container
 * [Alpine linux](https://www.alpinelinux.org/):
   * Designed for security, simplicity, and resource efficiency
 * [nginx](https://nginx.org/) with [nginx-rtmp](https://github.com/arut/nginx-rtmp-module):
