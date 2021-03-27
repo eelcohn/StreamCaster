@@ -1,7 +1,20 @@
 # StreamCaster
 Fully automated live streaming to multiple platforms.
 
-#### Applications and design choices
+### Features:
+
+* Fully automated live streaming to multiple platforms.
+* Minimal user interaction needed to create, start and stop live streams.
+* One single dashboard which allows you to:
+  * Monitor your live stream in detail over all platforms
+  * Interact with your listeners/viewers over all platforms
+* Stream title and description are uniform and exactly the same over all platforms.
+* Fully automated VJ to use in your live streams
+* The logo of your organization is automatically integrated to your live stream
+* The DJ name is automatically integrated in your live stream
+* Live streams are automatically recorded, without the need for user interaction
+
+### Applications and design choices:
 
 ##### Generic applications:
 * [Alpine linux](https://www.alpinelinux.org/):
