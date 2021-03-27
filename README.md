@@ -15,6 +15,21 @@ Fully automated live streaming to multiple platforms.
 * Live streams are automatically recorded, without the need for user interaction
 * Fully seperate Live- and Test-environments which allows you to test your broadcast setup without bothering your fanbase with test broadcasts
 
+### Installing:
+
+1. Create the Docker image:<br>
+`sudo ./build.sh`
+2. Start the Docker image:
+  * If you run the Docker image locally:<br>
+  `sudo ./run.sh`
+  * If you run it on a Synology DiskStation:<br>
+    * Upload the Synology Docker image located in the `./synology/` folder
+    * Add the following ports: 1935, 1936, 8000 and 8080
+    * Add the following folders:
+      * `/config`: all configuration files are located here
+      * `/mnt/recordings`: all stream recordings will be stored here
+      * `/mnt/visuals`: put all the visuals for the auto-VJ here
+
 ### Applications and design choices:
 
 ##### Generic applications:
