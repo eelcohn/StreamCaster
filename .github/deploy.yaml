@@ -59,7 +59,7 @@ jobs:
           VERSION=${{ github.run_number }} # Alternative: use a versioning strategy
           
           # Build the Docker image
-          docker build -t $IMAGE_NAME:$TAG .
+          docker build . --file Dockerfile -t $IMAGE_NAME:$TAG
 
           # Tag with version
           docker tag $IMAGE_NAME:$TAG $IMAGE_NAME:$VERSION
