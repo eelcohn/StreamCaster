@@ -39,9 +39,41 @@ jobs:
           # Replace this with your test command
           pytest tests/
 
-  docker:
+  vue:
     runs-on: alpine-latest
     needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'latest' # Change to your required Node.js version
+
+      - name: Install dependencies
+        run: |
+          cd vue  # Change to your Vue.js directory
+          npm install # or yarn install
+
+      - name: Run npm audit
+        run: |
+          cd vue
+          npm audit
+
+      - name: Run yarn audit
+        run: |
+          cd vue
+          yarn audit
+
+      - name: Build for production
+        run: |
+          cd vue
+          npm run build # or yarn build
+
+  docker:
+    runs-on: alpine-latest
+    needs: [build, vue]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
