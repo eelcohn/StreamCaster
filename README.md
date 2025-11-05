@@ -14,6 +14,34 @@ Fully automated live streaming to multiple platforms.
 * The DJ name is automatically integrated in your live stream
 * Live streams are automatically recorded, without the need for user interaction
 * Fully seperate Live- and Test-environments which allows you to test your broadcast setup without bothering your fanbase with test broadcasts
+* 🔒 Security:
+  * XSS protection
+  * CSRF tokens
+  * Rate limiting
+  * Input validation
+* ⚡ Performance:
+  * Frontend:
+    * Lazy loading
+    * Request throttling
+    * Audio caching
+    * Computed properties
+  * Backend:
+    * Blazing-fast async Python3 code
+* ♿ Accessibility:
+  * ARIA labels
+  * Keyboard navigation
+  * Focus management
+* 🌍 i18n:
+  * Multi-language support with vue-i18n
+* 📱 Responsive:
+  * Mobile-friendly design with CSS
+* 🔄 Real-time:
+  * Live updates for chat, viewers, metrics
+
+
+
+
+
 
 ### Installing:
 
