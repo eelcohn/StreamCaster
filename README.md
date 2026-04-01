@@ -1,5 +1,5 @@
 # StreamCaster
-Fully automated live streaming to multiple platforms.
+Fully automated, user-friendly multi-platform live streaming.
 
 ### Features:
 
@@ -26,7 +26,7 @@ Fully automated live streaming to multiple platforms.
     * Audio caching
     * Computed properties
   * Backend:
-    * Blazing-fast async Python3 code
+    * 🚀 Blazing-fast async Python3 code
 * ♿ Accessibility:
   * ARIA labels
   * Keyboard navigation
@@ -37,21 +37,18 @@ Fully automated live streaming to multiple platforms.
   * Mobile-friendly design with CSS
 * 🔄 Real-time:
   * Live updates for chat, viewers, metrics
-
-
-
-
-
+* 🗺️ Geofencing
 
 ### Installing:
 
 1. Create the Docker image:<br>
-`sudo ./build.sh`
+`sudo ./bin/docker/build.sh`
 2. Start the Docker image:
   * If you run the Docker image locally:<br>
-  `sudo ./run.sh`
+  `sudo ./bin/docker/run.sh`
   * If you run it on a Synology DiskStation:<br>
-    * Upload the Synology Docker image located in the `./synology/` folder
+    * Build the docker image with `sudo ./bin/docker/run.sh`
+    * Import the Docker image located in StreamCaster's root folder in Synology's Container Manager
     * Add the following ports: 1935, 1936, 8000 and 8080
     * Add the following folders:
       * `/config`: all configuration files are located here
@@ -78,7 +75,13 @@ Fully automated live streaming to multiple platforms.
 * [LiquidSoap](https://www.liquidsoap.info/) (experimental):
   * Can be used to switch from multiple input streams to one output stream without any downtime (TODO figure out if this really works)
 
-##### Python applications and libraries:
+##### Frontend:
+* HTML
+* CSS
+* JavaScript
+* [Remix Icon](https://remixicon.com/)
+
+##### Python applications and libraries (backend):
 * StreamCaster:
   * Custom Python application which:
     * Handles all API requests to/from the supported streaming platforms
@@ -88,7 +91,7 @@ Fully automated live streaming to multiple platforms.
   * Python webserver for serving API content
 * [FastAPI](https://fastapi.tiangolo.com/):
   * A modern, fast (high-performance), web framework for building APIs with Python
-* [PyJWT]():
+* [PyJWT](https://pypi.org/project/PyJWT/):
   * Python library which encodes and decodes JSON Web Tokens (OAUTH)
 * [SQLAlchemy](https://www.sqlalchemy.org/):
   * Support for SQL databases in Python
@@ -96,3 +99,18 @@ Fully automated live streaming to multiple platforms.
   * Python script for managing live streams to Instagram
 * [TwitchIO](https://github.com/TwitchIO/TwitchIO):
   * Python script for managing live chat with Twitch channels
+
+### Comparison with other services:
+|Name                                    |Open Source|Free to use|Hosting        |
+|----------------------------------------|-----------|-----------|---------------|
+|[Castr](https://castr.com/)             |    No     |    No     | Cloud         |
+|[Dacast](https://www.dacast.com/)       |    No     |    No     | Cloud         |
+|[Livepush](https://www.livepush.io/)    |    No     |    No     | Cloud         |
+|[Livestreamer](https://livestreamer.io/)|    Yes    |    Yes    | Self-hosted   |
+|[OneStream](https://onestream.live/)    |    No     |    No     | Cloud         |
+|[Restream](https://restream.io/)        |    No     |    No     | Cloud         |
+|[Stream](https://getstream.com/)        |    No     |    No     | Cloud         |
+|**StreamCaster**                        |  **Yes**  |  **Yes**  |**Self-hosted**|
+|[Streamlabs](https://streamlabs.com/)   |    No     |    No     | Cloud         |
+|[StreamShark](https://streamshark.io/)  |    No     |    No     | Cloud         |
+|[XSplit](https://www.xsplit.com/)       |    No     |    No     | Cloud         |
